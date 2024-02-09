@@ -8,5 +8,17 @@
   $('#myTab a').on('click', function (e) {
     e.preventDefault()
     $(this).tab('show')
-  })
+  });
+
+  function toggleSavePost(button, id) {
+    fetch('http://localhost/instadam/api/posts.php/' + id);
+
+    button.classList.toggle('fa-regular');
+    button.classList.toggle('fa-solid');
+
+    // 
+    // button.classList.add('disabled');
+    // button.innerHTML = '<i class="fa-solid fa-bookmark"></i>';
+  }
+
 </script>

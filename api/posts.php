@@ -6,8 +6,6 @@ $_SESSION['posts'] = isset($_SESSION['posts']) ? $_SESSION['posts'] : [];
 // set user initially
 $_SESSION['user'] = isset($_SESSION['user']) ? $_SESSION['user'] : null;
 
-// include 'config.php';
-
 // save posts to session
 function savePost($id) {
     $_SESSION['posts'][] = intval($id);
@@ -34,8 +32,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     } else {
         savePost($postId);
     }
-} else if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
-    unsavePost($postId);
 }
 
 echo json_encode([
