@@ -1,3 +1,3 @@
 # instadam
 
-forked from [instadam](https://github.com/robinparadise/instadam)
+forked this repository https://github.com/robinparadise/instadam
